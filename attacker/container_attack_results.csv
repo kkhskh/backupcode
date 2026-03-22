@@ -1,0 +1,5 @@
+configuration,hit_rate_percent,iterations,threshold,notes
+bare_metal_to_bare_metal,6.15,100000,197,baseline - same libc.so
+container_own_libs_to_container,0.00,100000,197,different glibc versions
+container_bindmount_to_bare_metal,0.04,1000000,193,bind-mounted host libc
+container_bindmount_ksm_to_bare_metal,0.05,1000000,193,KSM enabled but 0 pages merged
